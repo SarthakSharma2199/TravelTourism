@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Travel'n Today</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/icomoon.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark probootstrap-navabr-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">Travel'n Today</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#probootstrap-nav"
+          aria-controls="probootstrap-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="probootstrap-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/packages" class="nav-link">Packages</a></li>
+            <li class="nav-item"><a href="/experience" class="nav-link">Experience</a></li>
+            <% if(flag==0) { %>
+            <li class="nav-item probootstrap-cta probootstrap-seperator">
+              <a href="/signup" class="nav-link">Sign up</a>
+            </li>
+            <li class="nav-item probootstrap-cta">
+              <a href="/login" class="nav-link">Log In</a>
+            </li>
+            <% } else{ %>
+                <li class="nav-item probootstrap-cta">
+                        <a href="#" class="nav-link"><%= name %></a>
+                </li>
+                <li class="nav-item probootstrap-cta">
+                    <a href="/logout" class="nav-link">Log Out</a>
+                </li>
+                <% } %>
+          </ul>
+        </div>
+      </div>
+    </nav>

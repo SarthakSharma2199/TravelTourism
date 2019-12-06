@@ -1,0 +1,51 @@
+<%include partials/header %>
+
+    <section class="probootstrap-cover">
+      <div class="container">
+        <div class="row probootstrap-vh-75 align-items-center text-left">
+          <div class="col-sm">
+            <div class="probootstrap-text pt-5">
+              <h1 class="probootstrap-heading text-white mb-4">Log In</h1>
+              <div class="probootstrap-subheading mb-5">
+                <p class="h4 font-weight-normal">
+                  Welcome Back!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="probootstrap-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form action="/loginCheck" method="post" class="probootstrap-form mb-5">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" />
+              </div>
+              <div class="form-group">
+                <label for="email">Password</label>
+                <input type="password" class="form-control" id="password" name="password" />
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  class="btn btn-primary"
+                  id="submit"
+                  name="submit"
+                  value="login"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 pl-md-5 pl-3">
+            <img src="images/signup-1.png" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <% include partials/footer %>

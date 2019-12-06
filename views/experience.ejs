@@ -1,0 +1,131 @@
+<%include partials/header %>
+
+<section class="probootstrap-cover">
+  <div class="container">
+    <div class="row probootstrap-vh-75 align-items-center text-left">
+      <div class="col-sm">
+        <div class="probootstrap-text pt-5">
+          <h1 class="probootstrap-heading text-white mb-4">Customize and Personalize</h1>
+          <div class="probootstrap-subheading mb-5">
+            <p class="h4 font-weight-normal">
+              Use our intuitive tool to plan your next journey and have the time of your life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<form action="/responses" method="POST" class="mb-5">
+  <section class="probootstrap-section">
+    <div class="container" style="color: #333;">
+      <div class="form-group" style="font-size: 1.5rem; display: flex; ">
+        <label for="beach" style="flex: 7;">Planning to bask in a beach next: </label>
+        <!-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="beach" id="yes" autocomplete="off" checked> Yes
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="beach" id="no"> No
+                </label>
+              </div> -->
+        <div style="flex: 4">
+          <input type="radio" name="beach" value="true" /><span>Yes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="beach" value="false" /><span>No</span>
+        </div>
+      </div>
+      <div class="form-group" style="font-size: 1.5rem; display: flex;">
+        <label for="beach" style="flex: 7;">Love Hiking?</label>
+        <div style="flex: 4">
+          <input type="radio" name="hiking" value="true" /><span>Yes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="hiking" value="false" /><span>No</span>
+        </div>
+      </div>
+      <div class="form-group" style="font-size: 1.5rem; display: flex;">
+        <label for="beach" style="flex: 7;">Historical monuments tickle your fancy? </label>
+        <div style="flex: 4">
+          <input type="radio" name="history" value="true" /><span>Yes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="history" value="false" /><span>No</span>
+        </div>
+      </div>
+      <div class="form-group" style="font-size: 1.5rem; display: flex;">
+        <label for="beach" style="flex: 7;">Feeling the tug of nature?</label>
+        <div style="flex: 4">
+          <input type="radio" name="nature" value="true" /><span>Yes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="nature" value="false" /><span>No</span>
+        </div>
+      </div>
+      <div class="form-group" style="font-size: 1.5rem; display: flex;">
+        <label for="beach" style="flex: 7;">Don't need a break from 'em cities?! </label>
+        <div style="flex: 4">
+          <input type="radio" name="cities" value="true" /><span>Yes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="cities" value="false" /><span>No</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="probootstrap-section probootstrap-section-feature pb-0 probootstrap-overflow-hidden"
+  >
+    <div class="container" style="color: #f4f4f4;">
+      <div class="form-group" style="font-size: 1.5rem; display: flex;">
+        <label for="beach" style="flex: 7;">Have a sweet tooth? </label>
+        <div style="flex: 4">
+          <input type="radio" name="sweet" value="true" /><span>Yes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="sweet" value="false" /><span>No</span>
+        </div>
+      </div>
+      <div class="form-group" style="font-size: 1.5rem; display: flex;">
+        <label for="beach" style="flex: 7;">Like 'em Spices? </label>
+        <div style="flex: 4">
+          <input type="radio" name="spice" value="true" /><span>Yes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="spice" value="false" /><span>No</span>
+        </div>
+      </div>
+      <div class="form-group" style="font-size: 1.5rem; display: flex;">
+        <label for="beach" style="flex: 7;">Surprise Me!! </label>
+        <div style="flex: 4">
+          <input type="radio" name="surprise" value="true" /><span>Yes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="surprise" value="false" /><span>No</span>
+        </div>
+      </div>
+      <br /><br />
+    </div>
+  </section>
+
+  <section class="probootstrap-section">
+    <div class="container" style="color: #333;">
+      <div class="form-group" style="font-size: 1.5rem; display: flex;">
+        <label for="beach" style="flex: 7;">Looking forward to a luxurious stay? </label>
+        <div style="flex: 4">
+          <input type="radio" name="luxury" value="true" /><span>Yes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="luxury" value="false" /><span>No</span>
+        </div>
+      </div>
+      <div class="form-group" style="font-size: 1.5rem; display: flex;">
+        <label for="beach" style="flex: 7;">Want specialized Room Service? </label>
+        <div style="flex: 4">
+          <input type="radio" name="room_service" value="true" /><span>Yes</span
+          >&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="room_service" value="false" /><span
+            >No</span
+          >
+        </div>
+      </div>
+      <div class="form-group" style="font-size: 1.5rem; display: flex;">
+        <label for="beach" style="flex: 7;">Want a grand view out of the window? </label>
+        <div style="flex: 4">
+          <input type="radio" name="view" value="true" /><span>Yes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="view" value="false" /><span>No</span>
+        </div>
+      </div>
+      <br /><br />
+      <div class="row">
+        <button class="btn btn-primary col-3">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-danger col-3">Reset</button>
+      </div>
+    </div>
+  </section>
+</form>
+
+<% include partials/footer %>
